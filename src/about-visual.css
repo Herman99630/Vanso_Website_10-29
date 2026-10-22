@@ -25,3 +25,6 @@
 /* Shared creator/listener artwork: preserve the full transparent composition. */
 .audience-artwork{width:100%;max-width:1400px;margin:0 auto}
 .audience-artwork img{display:block;width:100%;height:auto;object-fit:contain}
+
+.why-vanso-artwork{width:100%;min-width:0}
+.why-vanso-artwork img{display:block;width:100%;height:auto;object-fit:contain}
