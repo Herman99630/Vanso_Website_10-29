@@ -21,3 +21,7 @@
 @media(max-width:1000px){.audience-canvas{gap:12px;padding:30px 18px}.shared-cover{width:140px;height:140px}.audience-side h3{font-size:25px}.connection-ring{width:230px;height:230px;top:-30px}.scene-grid{gap:16px}.scene-visual{padding:20px}.idea-scene strong{font-size:22px}}
 @media(max-width:800px){.inspiration-art{min-height:430px}.idea-note{left:20px;right:45px}.idea-note strong{font-size:24px}.memory-record{left:35px;right:15px}.audience-canvas{grid-template-columns:1fr;gap:35px;padding:28px 22px}.audience-side{padding:10px}.shared-song{margin:25px 0}.shared-cover{width:170px;height:170px}.connection-ring{width:250px;height:250px;top:-30px}.audience-footer{margin-top:0}.scene-grid{grid-template-columns:1fr;gap:42px}.scene-visual{height:220px}.scene-grid h3{font-size:27px}.audience-lead{font-size:21px!important}}
 @media(prefers-reduced-motion:reduce){.visual-wave i{animation:none}.scene-visual,.audience-side,.floating-note{transition:none;transform:none!important}}
+
+/* Shared creator/listener artwork: preserve the full transparent composition. */
+.audience-artwork{width:100%;max-width:1400px;margin:0 auto}
+.audience-artwork img{display:block;width:100%;height:auto;object-fit:contain}

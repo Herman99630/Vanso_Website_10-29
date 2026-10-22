@@ -23,11 +23,8 @@ import '../about-visual.css'
 
     <section class="section container audience-section">
       <div class="section-heading"><span class="eyebrow">ONE SHARED MUSIC SPACE</span><h2>Who Is Vanso For?</h2><p class="audience-lead">Create, Listen, Or Both. You Belong Here.</p><p>Turn your ideas into songs, discover music from others, or enjoy both sides of Vanso.</p></div>
-      <div class="audience-canvas">
-        <article class="audience-side audience-create" tabindex="0"><span class="audience-icon"><ProductIcon name="music" /></span><small>WHEN YOU WANT TO CREATE</small><h3>Create Your Sound</h3><p>Give your ideas a melody. Make original AI music and share it with listeners.</p><div class="floating-note">“Make this feeling a song.”</div><div class="audience-tags"><span>Your Ideas</span><span>Your Stories</span></div></article>
-        <div class="shared-song"><div class="connection-ring"></div><div class="shared-cover"><img src="/assets/album-art.png" alt="Concept album artwork connecting music creation and listening" /><ProductIcon name="headphones" /></div><span>ONE SONG. MANY CONNECTIONS.</span><div class="visual-wave" aria-hidden="true"><i v-for="n in 22" :key="n" :style="{height: (10 + (n * 11 % 30)) + 'px', animationDelay: n * .07 + 's'}"></i></div></div>
-        <article class="audience-side audience-listen" tabindex="0"><span class="audience-icon"><ProductIcon name="headphones" /></span><small>WHEN YOU WANT TO DISCOVER</small><h3>Find Your Next Favorite</h3><p>Explore original music, find new voices and connect through listening.</p><div class="floating-note"><ProductIcon name="comment" />Listen. Save. Connect.</div><div class="audience-tags"><span>New Voices</span><span>Shared Feelings</span></div></article>
-        <p class="audience-footer">You Don’t Have To Choose A Side.</p>
+      <div class="audience-artwork">
+        <img src="/assets/vanso-create-and-listen.webp" alt="Find your next favorite or make something yours: a listener surrounded by songs and everyday inspiration on Vanso." width="1672" height="941" loading="lazy" decoding="async" />
       </div>
     </section>
 
