@@ -2,7 +2,6 @@
 import SiteHeader from '../components/SiteHeader.vue'
 import SiteFooter from '../components/SiteFooter.vue'
 import AppPhone from '../components/AppPhone.vue'
-import ProductIcon from '../components/ProductIcon.vue'
 import '../about-visual.css'
 
 </script>
@@ -25,10 +24,11 @@ import '../about-visual.css'
 
     <section class="section container creation-scenes">
       <div class="section-heading"><h2>How Does Vanso Turn Ideas Into Music?</h2><p>From your first thought to a song that others can discover.</p></div>
+      <div class="creation-flow-artwork"><img src="/assets/vanso-idea-to-song.webp" alt="From an everyday idea to an AI-generated song on Vanso, then sharing it with listeners who can like, save and comment." width="1774" height="887" loading="lazy" decoding="async" /></div>
       <div class="scene-grid">
-        <article><div class="scene-visual idea-scene"><ProductIcon name="comment" /><strong>A Little Nostalgia.<br />A New Beginning.</strong><div class="audience-tags"><span>A Feeling</span><span>A Story</span></div></div><span class="scene-number">01</span><h3>Start With An Idea</h3><p>Begin with your words, lyrics, mood or imagination.</p></article>
-        <article><div class="scene-visual sound-scene"><ProductIcon name="music" /><div class="visual-wave" aria-hidden="true"><i v-for="n in 24" :key="n" :style="{height: (20 + (n * 17 % 70)) + 'px', animationDelay: n * .06 + 's'}"></i></div><span>YOUR IDEA, TAKING SHAPE</span></div><span class="scene-number">02</span><h3>Create Your Sound</h3><p>Vanso turns your idea into original AI music, without professional production skills.</p></article>
-        <article><div class="scene-visual publish-scene"><div class="mini-song"><img src="/assets/album-art.png" alt="Illustrative song artwork" /><strong>Your Original Song</strong></div><div class="publish-listeners"><ProductIcon name="publish" /><ProductIcon name="headphones" /><ProductIcon name="comment" /></div><span>PUBLISH ON VANSO</span></div><span class="scene-number">03</span><h3>Let It Be Heard</h3><p>Choose whether to publish and give listeners a way to discover your music.</p></article>
+        <article><span class="scene-number">01</span><h3>Start With An Idea</h3><p>Begin with your words, lyrics, mood or imagination.</p></article>
+        <article><span class="scene-number">02</span><h3>Create Your Sound</h3><p>Vanso turns your idea into original AI music, without professional production skills.</p></article>
+        <article><span class="scene-number">03</span><h3>Let It Be Heard</h3><p>Choose whether to publish and give listeners a way to discover your music.</p></article>
       </div>
     </section>
 
