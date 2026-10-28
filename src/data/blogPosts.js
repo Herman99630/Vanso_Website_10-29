@@ -1,7 +1,9 @@
 // Preview editorial content. Replace with approved articles before public launch.
 // Set featured: true on exactly one entry to pin it above the article grid.
+// Replace preview bylines and dates with approved publication metadata.
 export const blogPosts = [
   {
+    author: 'Vanso Team', publishedAt: '2026-10-28', isPreview: true,
     slug: 'everyday-life-has-a-soundtrack', featured: true, category: 'Everyday Stories',
     title: 'Your Everyday Life Has A Soundtrack',
     excerpt: 'The walk home. A little win. Something you wish you had said. There is a song in the moments you already live.',
@@ -13,6 +15,7 @@ export const blogPosts = [
     ],
   },
   {
+    author: 'Vanso Team', publishedAt: '2026-10-28', isPreview: true,
     slug: 'small-moments-song-ideas', category: 'Inspiration', title: 'Five Small Moments Worth Turning Into A Song',
     excerpt: 'An inside joke, a new beginning, or making it through Monday. Start with something that feels like you.',
     image: new URL('../../assets/vanso-everyday-music.webp', import.meta.url).href, alt: 'Scenes of ordinary life and music', tone: 'rose',
@@ -23,6 +26,7 @@ export const blogPosts = [
     ],
   },
   {
+    author: 'Vanso Team', publishedAt: '2026-10-28', isPreview: true,
     slug: 'find-your-next-favorite', category: 'Listening', title: 'Find Your Next Favorite, One Song At A Time',
     excerpt: 'Follow a feeling, stay for a lyric, and give an unfamiliar voice a chance. Your next favorite might surprise you.',
     image: new URL('../../assets/vanso-create-and-listen.webp', import.meta.url).href, alt: 'A listener surrounded by music and creative inspiration', tone: 'mint',
@@ -33,6 +37,7 @@ export const blogPosts = [
     ],
   },
   {
+    author: 'Vanso Team', publishedAt: '2026-10-28', isPreview: true,
     slug: 'from-an-idea-to-a-song', category: 'Getting Started', title: 'From An Idea To A Song Of Your Own',
     excerpt: 'Begin with a thought, make it musical, and decide how you want to share it. No music production background needed.',
     image: new URL('../../assets/vanso-idea-to-song.webp', import.meta.url).href, alt: 'An idea becoming a song and connecting with listeners in Vanso', tone: 'violet',
@@ -43,6 +48,7 @@ export const blogPosts = [
     ],
   },
   {
+    author: 'Vanso Team', publishedAt: '2026-10-28', isPreview: true,
     slug: 'a-song-for-a-friend', category: 'Inspiration', title: 'Some Things Are Easier To Say In A Song',
     excerpt: 'A thank-you, a shared memory, or a joke only two people understand. Make a little room for the personal.',
     art: 'note', tone: 'rose',
@@ -53,6 +59,7 @@ export const blogPosts = [
     ],
   },
   {
+    author: 'Vanso Team', publishedAt: '2026-10-28', isPreview: true,
     slug: 'listening-is-part-of-the-story', category: 'Community', title: 'Listening Is Part Of The Story, Too',
     excerpt: 'You do not have to create a song to be part of Vanso. Discover, save, and let someone know their music found you.',
     art: 'connection', tone: 'mint',
@@ -63,6 +70,7 @@ export const blogPosts = [
     ],
   },
   {
+    author: 'Vanso Team', publishedAt: '2026-10-28', isPreview: true,
     slug: 'make-your-song-feel-like-you', category: 'Getting Started', title: 'Make Your Song Feel A Little More Like You',
     excerpt: 'A cover and a few words can give listeners a way into your world. Tell the small story behind the sound.',
     art: 'cover', tone: 'violet',
