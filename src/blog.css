@@ -74,3 +74,26 @@
 .blog-index-note { margin:38px 0 0; padding-top:20px; border-top:1px solid #ffffff12; }
 @media(max-width:1000px) { .blog-featured-link { gap:28px; }.blog-featured h1 { font-size:34px; } }
 @media(max-width:650px) { .blog-content { padding-top:24px; }.blog-featured-link { grid-template-columns:1fr; gap:22px; }.blog-featured-copy { padding:0; }.blog-featured h1 { font-size:32px; }.blog-featured p { font-size:14px; }.blog-featured .blog-read { margin-top:18px; }.blog-latest { padding-top:32px; } }
+
+/* The complete article is the interaction target, without a separate read CTA. */
+.blog-card > a,.blog-featured-link {
+  transition:transform .25s ease,box-shadow .25s ease,background-color .25s ease;
+}
+.blog-card p { margin-bottom:0; }
+.blog-card-copy { padding-bottom:18px; }
+.blog-card > a:focus-visible,.blog-featured-link:focus-visible {
+  box-shadow:0 16px 32px #0005;
+}
+@media(hover:hover) and (pointer:fine) {
+  .blog-card > a:hover,.blog-featured-link:hover {
+    transform:translateY(-6px);
+    box-shadow:0 18px 38px #0006,0 0 24px #54e3d50a;
+    background-color:#ffffff03;
+  }
+  .blog-card a:hover img { transform:none; }
+  .blog-card a:hover h3,.blog-featured-link:hover h1 { color:inherit; }
+}
+@media(prefers-reduced-motion:reduce) {
+  .blog-card > a,.blog-featured-link { transition:none; }
+  .blog-card > a:hover,.blog-featured-link:hover { transform:none; }
+}
