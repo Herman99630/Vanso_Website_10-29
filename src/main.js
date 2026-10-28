@@ -7,12 +7,17 @@ import DownloadPage from './views/DownloadPage.vue'
 import HelpPage from './views/HelpPage.vue'
 import GettingStartedPage from './views/GettingStartedPage.vue'
 import PricingPage from './views/PricingPage.vue'
+import BlogPage from './views/BlogPage.vue'
+import BlogArticlePage from './views/BlogArticlePage.vue'
+import { blogPosts } from './data/blogPosts'
 import './styles.css'
 import './help.css'
 import './v02.css'
 import './layout-polish.css'
 
 const routes = [
+  { path: '/blog', component: BlogPage, meta: { title: 'Vanso Blog | Everyday Stories, Music & Ideas', description: 'Explore everyday stories, AI music ideas, and ways to create, listen, and connect on Vanso.' } },
+  { path: '/blog/:slug', component: BlogArticlePage, meta: { title: 'Vanso Blog', description: 'Stories, music and everyday inspiration from Vanso.' } },
   { path: '/', component: HomePage, meta: {"title": "Vanso | AI Music Creation & Discovery", "description": "Turn everyday ideas into songs with AI. Share your music on Vanso, discover songs from others, and connect through listening, likes, and comments."} },
   { path: '/about', component: AboutPage, meta: {"title": "About Vanso | Music, Expression & Connection", "description": "Discover Vanso, a music platform for turning everyday ideas into songs with AI, sharing your music, and discovering what others create."} },
   { path: '/download', component: DownloadPage, meta: {"title": "Download Vanso | Create & Discover AI Music", "description": "Get Vanso for iPhone and Android. Turn everyday ideas into songs with AI, share your music, and discover songs from others."} },
@@ -39,8 +44,9 @@ const router = createRouter({
 })
 
 router.afterEach((to) => {
-  document.title = to.meta.title
-  document.querySelector('meta[name="description"]')?.setAttribute('content', to.meta.description)
+  const post = to.path.startsWith('/blog/') && blogPosts.find(item => item.slug === to.params.slug)
+  document.title = post ? `${post.title} | Vanso Blog` : to.meta.title
+  document.querySelector('meta[name="description"]')?.setAttribute('content', post ? post.excerpt : to.meta.description)
 })
 
 createApp(App).use(router).mount('#app')
