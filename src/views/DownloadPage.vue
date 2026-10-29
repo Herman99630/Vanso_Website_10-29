@@ -77,10 +77,10 @@ const reviewsBottom = [
         <span class="eyebrow">WHY VANSO</span>
         <h2>Three Ways To Enjoy Vanso</h2>
       </div>
-      <div class="three-grid benefit-grid">
-        <article><b>01</b><h3>Turn Everyday Ideas Into Songs</h3><p>Describe an idea, a feeling or a story, and let Vanso transform it into an original AI-generated song.</p></article>
-        <article><b>02</b><h3>Find Music That Fits Your Day</h3><p>Explore original songs from others and find something for your mood, your downtime, or your next little adventure.</p></article>
-        <article><b>03</b><h3>Connect Over A Song</h3><p>Share your music, save songs you love, and join in with likes and comments.</p></article>
+      <div class="three-grid benefit-grid text-only-cards">
+        <article><h3>Turn Everyday Ideas Into Songs</h3><p>Describe an idea, a feeling or a story, and let Vanso transform it into an original AI-generated song.</p></article>
+        <article><h3>Find Music That Fits Your Day</h3><p>Explore original songs from others and find something for your mood, your downtime, or your next little adventure.</p></article>
+        <article><h3>Connect Over A Song</h3><p>Share your music, save songs you love, and join in with likes and comments.</p></article>
       </div>
     </section>
 

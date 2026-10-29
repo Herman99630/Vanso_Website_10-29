@@ -16,7 +16,7 @@ import '../about-visual.css'
 
     <section class="split-section container section"><div><span class="eyebrow pink">WHY WE EXIST</span><h2>Why Vanso Exists</h2><p>Music can open a window into everyday life. A song can hold your mood, tell your side of a story, or offer a glimpse into someone else’s world. Vanso brings these moments together, giving you a place to express yourself and discover others through music.</p><p>Vanso uses AI to make music creation more accessible, so you can start with your own ideas without a background in music production. You can also simply listen, discover new songs, and enjoy what others share.</p></div><div class="why-vanso-artwork"><img :src="aboutArt0" alt="Music connects everyday moments: writing, cooking, settling into a new home and relaxing with a favorite song." width="1600" height="900" loading="lazy" decoding="async" /></div></section>
 
-    <section class="section container"><div class="section-heading"><h2>What Can You Do With Vanso?</h2><p>Create something personal, discover something new, and connect through music.</p></div><div class="three-grid"><article><b>01</b><h3>Turn Your Day Into Music</h3><p>Start with an idea, a feeling, or a story from your day. Use AI to turn it into a song and share it on Vanso.</p></article><article><b>02</b><h3>Discover Music From Others</h3><p>Explore original songs, find new voices, and listen to something that fits your mood.</p></article><article><b>03</b><h3>Connect Through Music</h3><p>Like a song, save a favorite, or leave a comment. There is more than one way to take part.</p></article></div></section>
+    <section class="section container"><div class="section-heading"><h2>What Can You Do With Vanso?</h2><p>Create something personal, discover something new, and connect through music.</p></div><div class="three-grid text-only-cards"><article><h3>Turn Your Day Into Music</h3><p>Start with an idea, a feeling, or a story from your day. Use AI to turn it into a song and share it on Vanso.</p></article><article><h3>Discover Music From Others</h3><p>Explore original songs, find new voices, and listen to something that fits your mood.</p></article><article><h3>Connect Through Music</h3><p>Like a song, save a favorite, or leave a comment. There is more than one way to take part.</p></article></div></section>
 
     <section class="section container audience-section">
       <div class="section-heading"><span class="eyebrow">ONE SHARED MUSIC SPACE</span><h2>Who Is Vanso For?</h2><p class="audience-lead">Create, Listen, Or Both. You Belong Here.</p><p>Turn your ideas into songs, discover music from others, or enjoy both sides of Vanso.</p></div>
@@ -29,9 +29,9 @@ import '../about-visual.css'
       <div class="section-heading"><h2>How Does Vanso Turn Ideas Into Music?</h2><p>From your first thought to a song that others can discover.</p></div>
       <div class="creation-flow-artwork"><img :src="aboutArt2" alt="From an everyday idea to an AI-generated song on Vanso, then sharing it with listeners who can like, save and comment." width="1600" height="900" loading="lazy" decoding="async" /></div>
       <div class="scene-grid">
-        <article><span class="scene-number">01</span><h3>Start With An Idea</h3><p>Begin with your words, lyrics, mood or imagination.</p></article>
-        <article><span class="scene-number">02</span><h3>Create Your Sound</h3><p>Vanso turns your idea into original AI music, without professional production skills.</p></article>
-        <article><span class="scene-number">03</span><h3>Let It Be Heard</h3><p>Choose whether to publish and give listeners a way to discover your music.</p></article>
+        <article><h3>Start With An Idea</h3><p>Begin with your words, lyrics, mood or imagination.</p></article>
+        <article><h3>Create Your Sound</h3><p>Vanso turns your idea into original AI music, without professional production skills.</p></article>
+        <article><h3>Let It Be Heard</h3><p>Choose whether to publish and give listeners a way to discover your music.</p></article>
       </div>
     </section>
 
