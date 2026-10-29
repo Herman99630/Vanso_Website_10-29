@@ -20,7 +20,7 @@ import '../about-visual.css'
 
     <section class="section container audience-section" aria-labelledby="audience-title">
       <div class="audience-editorial">
-      <div class="section-heading"><span class="eyebrow">ONE SHARED MUSIC SPACE</span><h2 id="audience-title">Who Is Vanso For?</h2><p class="audience-lead">Create, Listen, Or Both. You Belong Here.</p><p>Turn your ideas into songs, discover music from others, or enjoy both sides of Vanso.</p></div>
+      <div class="section-heading"><span class="eyebrow">ONE SHARED MUSIC SPACE</span><h2 id="audience-title">Who Is Vanso For?</h2><p class="audience-lead">Create, Listen, Or Both.<br />You Belong Here.</p><p>Turn your ideas into songs, discover music from others, or enjoy both sides of Vanso.</p></div>
       <div class="audience-artwork">
         <img :src="aboutArt1" alt="Find your next favorite or make something yours: a listener surrounded by songs and everyday inspiration on Vanso." width="1600" height="900" loading="lazy" decoding="async" />
       </div>
