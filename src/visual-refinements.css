@@ -71,3 +71,6 @@
  .article-page .help-article { padding-top:40px; }
  .home-page > .mission.section { min-height:580px; }
 }
+
+/* Align workflow artwork to the same left edge as its heading and copy. */
+.home-page .workflow-section .steps .official-step-icon { margin-left:0; margin-right:0; }

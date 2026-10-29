@@ -21,7 +21,6 @@ const posts = blogPosts.filter(post => post !== featured)
       <section class="blog-latest" aria-labelledby="latest-stories"><div class="blog-section-heading"><h2 id="latest-stories">All Posts</h2></div>
         <div class="blog-grid"><article v-for="post in posts" :key="post.slug" class="blog-card"><RouterLink :to="`/blog/${post.slug}`"><BlogArtwork :post="post" /><div class="blog-card-copy"><span class="blog-category">{{ post.category }}</span><h3>{{ post.title }}</h3><p>{{ post.excerpt }}</p></div></RouterLink></article></div>
       </section>
-      <p class="blog-preview-note blog-index-note">Editorial preview · Sample articles for layout review.</p>
     </div>
     <SiteFooter />
   </main>

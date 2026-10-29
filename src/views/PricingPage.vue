@@ -34,7 +34,7 @@ const plans = [
           <RouterLink class="button plan-cta" to="/download">Download App</RouterLink>
         </article>
       </div>
-      <p class="pricing-disclaimer">Download the Vanso app to choose and manage your plan. Subscriptions are available in the app, not on this website. Prices are shown in USD.</p>
+      <p class="pricing-disclaimer">Download the Vanso app to choose and manage your plan.<br />Subscriptions are available in the app, not on this website.<br />Prices are shown in USD.</p>
     </section>
 
     <section class="section container pricing-faq"><div class="section-heading"><h2>Vanso Pricing FAQs</h2></div><details open><summary>Can I Try AI Music Creation For Free?</summary><p>Yes. The Free plan includes 200 credits per month, allowing you to create up to 5 standard songs for personal use.</p></details><details><summary>How Many Credits Does One Standard Song Use?</summary><p>Each standard song uses 40 credits.</p></details><details><summary>Which Vanso Plans Include Commercial Use?</summary><p>Commercial use is included with the Mini, Starter and Pro plans. Music created under these plans can be used in personal and commercial projects, subject to the Vanso Subscription Terms and Terms of Service.</p></details><details><summary>Can I Cancel My Vanso Subscription?</summary><p>Yes. Vanso plans renew monthly and can be cancelled at any time.</p></details><details><summary>What Happens After I Cancel?</summary><p>Your paid-plan access continues through the end of your current billing period.</p></details></section>
