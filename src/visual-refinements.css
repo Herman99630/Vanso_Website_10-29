@@ -1,6 +1,6 @@
 /* Consistent inner-page rhythm, using the homepage scale. */
-.home-page .workflow-section .steps .official-step-icon { width:52px; height:52px; margin:0 auto 20px; }
-.home-page .workflow-section .steps .official-step-icon img { width:52px; height:52px; }
+.home-page .workflow-section .steps .official-step-icon { width:40px; height:40px; margin:0 auto 20px; }
+.home-page .workflow-section .steps .official-step-icon img { width:40px; height:40px; }
 .download-page .store-brand-icon { background:transparent; padding:0; box-shadow:none; }
 .download-page .download-hero-actions .button,.download-page .download-final-actions .button { background:rgba(255,255,255,.045); border:1px solid rgba(255,255,255,.18); box-shadow:none; }
 .download-page .download-hero-actions .button:hover,.download-page .download-final-actions .button:hover { background:rgba(255,255,255,.09); }
@@ -38,3 +38,7 @@
  .about-page .text-only-cards article,.download-page .text-only-cards article { padding:26px 24px; }
  .about-page .text-only-cards h3,.download-page .text-only-cards h3 { min-height:0; }
 }
+
+/* Smaller feature artwork keeps the cards focused on their copy. */
+.home-page .feature-card .official-feature-icon { width:52px; height:52px; margin:0 auto 20px; }
+.home-page .feature-card .official-feature-icon img { width:52px; height:52px; }
