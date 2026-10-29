@@ -1,7 +1,12 @@
 <script setup>
 import SiteHeader from '../components/SiteHeader.vue'
 import SiteFooter from '../components/SiteFooter.vue'
-import ProductIcon from '../components/ProductIcon.vue'
+import heroArt from '../../assets/download-hero-official.webp'
+import flowArt from '../../assets/download-flow-official.webp'
+import connectionArt from '../../assets/download-connection-official.webp'
+import googleIcon from '../../assets/ic_google_play_3x.webp'
+import appleIcon from '../../assets/ic_appstore_3x.webp'
+import '../download-official.css'
 import '../download-balance.css'
 
 const googleUrl = 'https://play.google.com/store/apps/details?id=com.vanso.music'
@@ -35,21 +40,12 @@ const reviewsBottom = [
         <h1>Turn Your Thoughts Into Songs.<br />Discover Someone Else’s Through Music.</h1>
         <p>Turn everyday ideas into songs with AI, share your music on Vanso, and discover songs from others. Create, listen, or enjoy a little of both — right from your phone.</p>
         <div class="download-hero-actions">
-          <a class="button" :href="appleUrl">Download On The App Store</a>
-          <a class="button ghost" :href="googleUrl">Get It On Google Play</a>
+          <a class="button" :href="appleUrl"><img class="store-brand-icon" :src="appleIcon" alt="" />Download On The App Store</a>
+          <a class="button ghost" :href="googleUrl"><img class="store-brand-icon" :src="googleIcon" alt="" />Get It On Google Play</a>
         </div>
         <small>Available for iPhone and Android devices.</small>
       </div>
-      <div class="hero-device-composition" aria-label="Vanso mobile creation and publishing experience">
-        <div class="product-device hero-product-device hero-device-back">
-          <span class="device-speaker"></span>
-          <img src="/assets/app-screens/create-simple.jpg" alt="Vanso mobile app AI music creation screen" />
-        </div>
-        <div class="product-device hero-product-device hero-device-front">
-          <span class="device-speaker"></span>
-          <img src="/assets/app-screens/song-result.jpg" alt="Vanso mobile app showing a finished AI-generated song ready to edit or publish" />
-        </div>
-      </div>
+      <div class="download-official-hero"><img :src="heroArt" width="1600" height="900" fetchpriority="high" alt="Create a song from an everyday idea and discover music in the Vanso app." /></div>
     </section>
 
     <section class="section container download-store-section">
@@ -59,13 +55,13 @@ const reviewsBottom = [
       </div>
       <div class="store-grid">
         <article>
-          <h3>Google Play</h3>
+          <h3 class="store-brand-heading"><img class="store-brand-icon" :src="googleIcon" alt="" />Google Play</h3>
           <p>For Android Devices</p>
           <a :href="googleUrl"><img :src="googleQr" alt="QR code for Vanso on Google Play" /></a>
           <a class="text-link" :href="googleUrl">Open Google Play →</a>
         </article>
         <article>
-          <h3>App Store</h3>
+          <h3 class="store-brand-heading"><img class="store-brand-icon" :src="appleIcon" alt="" />App Store</h3>
           <p>For iPhone</p>
           <a :href="appleUrl"><img :src="appleQr" alt="QR code for Vanso on the App Store" /></a>
           <a class="text-link" :href="appleUrl">Open App Store →</a>
@@ -93,18 +89,15 @@ const reviewsBottom = [
       </div>
       <div class="three-grid download-steps has-product-screens">
         <article>
-          <div class="flow-screen-stack">
-            <img src="/assets/app-screens/create-simple.jpg" alt="Vanso Simple mode for creating AI music from an idea" />
-            <img src="/assets/app-screens/create-custom.jpg" alt="Vanso Custom mode with additional music creation controls" />
-          </div>
+          <div class="flow-screen-stack official-flow-panel"><svg viewBox="0.0 0 533.333333 900" role="img" aria-label="Describe a birthday song for Mom"><image :href="flowArt" width="1600" height="900" /></svg></div>
           <b>01</b><h3>Start With An Idea</h3><p>Describe the music, feeling or story you want to create.</p>
         </article>
         <article>
-          <div class="flow-generating"><img src="/assets/app-screens/generating.jpg" alt="Vanso generating an original AI song" /></div>
+          <div class="flow-generating official-flow-panel"><svg viewBox="533.333333 0 533.333333 900" role="img" aria-label="Vanso generates your song"><image :href="flowArt" width="1600" height="900" /></svg></div>
           <b>02</b><h3>Generate Your Song</h3><p>Let Vanso turn your idea into an original AI-generated track.</p>
         </article>
         <article>
-          <div class="flow-single-screen"><img src="/assets/app-screens/song-result.jpg" alt="A finished AI-generated song in the Vanso app" /></div>
+          <div class="flow-single-screen official-flow-panel"><svg viewBox="1066.666666 0 533.333333 900" role="img" aria-label="Preview and personalize your birthday song"><image :href="flowArt" width="1600" height="900" /></svg></div>
           <b>03</b><h3>Make It Personal</h3><p>Make the song feel more personal with its cover art and description, and choose whether to share it on Vanso.</p>
         </article>
       </div>
@@ -117,14 +110,7 @@ const reviewsBottom = [
           <h2>A Song Can Start A Connection</h2>
           <p>Share a song from your life, then see what catches your ear. Save a new favorite, leave a thoughtful comment, or give a song you believe in a like. Your taste is part of what makes Vanso worth exploring.</p>
         </div>
-        <div class="listener-art" role="img" aria-label="Illustration of a published song connecting with plays, saves and comments">
-          <div class="listener-ring" aria-hidden="true"></div>
-          <svg class="listener-lines" viewBox="0 0 500 360" fill="none" aria-hidden="true"><path d="M250 180 Q320 80 390 55 M250 180 Q360 170 420 210 M250 180 Q180 290 120 300" stroke="currentColor" stroke-width="1.5" /></svg>
-          <div class="listener-song"><div class="listener-cover"><ProductIcon name="music" /><div class="listener-wave" aria-hidden="true"><i v-for="n in 20" :key="n" :style="{height:(16+n*13%49)+'px'}"></i></div></div><small>PUBLISHED ON VANSO</small><strong>Your Original Song</strong></div>
-          <div class="listener-feedback feedback-play"><ProductIcon name="headphones" /><span>Plays</span><div class="feedback-wave" aria-hidden="true"><i v-for="n in 9" :key="n" :style="{height:(6+n*7%20)+'px'}"></i></div></div>
-          <div class="listener-feedback feedback-save"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M6 3h12v18l-6-4-6 4V3Z" /></svg><span>Saves</span></div>
-          <div class="listener-feedback feedback-comment"><ProductIcon name="comment" /><span>Comments</span></div>
-        </div>
+        <div class="download-connection-art"><img :src="connectionArt" width="720" height="900" loading="lazy" alt="A song about a small win sparks personal comments and connection with listeners." /></div>
       </div>
     </section>
 
@@ -157,7 +143,7 @@ const reviewsBottom = [
       <span class="eyebrow">CREATE • LISTEN • CONNECT</span>
       <h2>A Little Music For Your Everyday</h2>
       <p>Get the Vanso app to turn moments into songs and discover music from others.</p>
-      <div><a class="button" :href="googleUrl">Get It On Google Play</a><a class="button ghost" :href="appleUrl">Download On The App Store</a></div>
+      <div><a class="button" :href="googleUrl"><img class="store-brand-icon" :src="googleIcon" alt="" />Get It On Google Play</a><a class="button ghost" :href="appleUrl"><img class="store-brand-icon" :src="appleIcon" alt="" />Download On The App Store</a></div>
     </section>
     <SiteFooter />
   </main>
