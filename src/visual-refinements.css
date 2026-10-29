@@ -1,0 +1,30 @@
+/* Consistent inner-page rhythm, using the homepage scale. */
+.home-page .workflow-section .steps .official-step-icon { width:52px; height:52px; margin:0 auto 20px; }
+.home-page .workflow-section .steps .official-step-icon img { width:52px; height:52px; }
+.download-page .store-brand-icon { background:transparent; padding:0; box-shadow:none; }
+.download-page .download-hero-actions .button,.download-page .download-final-actions .button { background:rgba(255,255,255,.045); border:1px solid rgba(255,255,255,.18); box-shadow:none; }
+.download-page .download-hero-actions .button:hover,.download-page .download-final-actions .button:hover { background:rgba(255,255,255,.09); }
+.download-final-actions { display:flex; justify-content:center; gap:12px; flex-wrap:wrap; }
+.download-page .flow-generating.official-flow-panel { padding:20px; }
+.download-page .official-flow-panel svg { overflow:hidden; }
+.download-phone-pair { position:relative; width:100%; max-width:480px; aspect-ratio: .8; margin:10px auto 0; align-self:center; }
+.download-phone-pair > div { position:absolute; filter:drop-shadow(0 18px 30px #0008); }
+.download-phone-pair svg { display:block; width:100%; height:auto; overflow:hidden; }
+.download-phone-back { width:78%; left:-3%; top:0; transform:rotate(-7deg); }
+.download-phone-front { width:65%; right:0; top:4%; transform:rotate(4deg); z-index:1; }
+.about-page .about-hero,.help-page .help-hero { min-height:0; padding-top:64px; padding-bottom:56px; align-items:start; }
+.about-page .about-hero > p { padding-top:50px; }
+.help-page .help-quick-start { margin-top:12px; }
+.download-page .download-hero { min-height:0; padding-top:64px; padding-bottom:64px; align-items:start; gap:48px; grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr); }
+.pricing-page .pricing-hero { min-height:0; padding-top:64px; padding-bottom:32px; justify-content:flex-start; }
+.about-page .about-hero h1,.help-page .help-hero h1,.download-page .download-hero h1,.pricing-page .pricing-hero h1 { font-size:clamp(42px,4.7vw,60px); line-height:1.08; letter-spacing:-.045em; margin-top:0; }
+.download-page .download-hero > div:first-child { min-width:0; }
+.download-page .download-hero > div:first-child > p { max-width:480px; }
+@media(max-width:800px) {
+ .about-page .about-hero,.help-page .help-hero,.download-page .download-hero,.pricing-page .pricing-hero { padding-top:40px; padding-bottom:40px; }
+ .download-page .download-hero { grid-template-columns:minmax(0,1fr); }
+ .download-phone-pair { max-width:360px; margin-top:12px; }
+ .about-page .about-hero > p { padding-top:0; }
+ .about-page .about-hero h1,.help-page .help-hero h1,.download-page .download-hero h1,.pricing-page .pricing-hero h1 { font-size:clamp(36px,7.5vw,48px); }
+ .download-page .download-hero > div:first-child > p { margin-inline:auto; }
+}

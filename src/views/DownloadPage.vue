@@ -40,12 +40,15 @@ const reviewsBottom = [
         <h1>Turn Your Thoughts Into Songs.<br />Discover Someone Else’s Through Music.</h1>
         <p>Turn everyday ideas into songs with AI, share your music on Vanso, and discover songs from others. Create, listen, or enjoy a little of both — right from your phone.</p>
         <div class="download-hero-actions">
-          <a class="button" :href="appleUrl"><img class="store-brand-icon" :src="appleIcon" alt="" />Download On The App Store</a>
+          <a class="button ghost" :href="appleUrl"><img class="store-brand-icon" :src="appleIcon" alt="" />Download On The App Store</a>
           <a class="button ghost" :href="googleUrl"><img class="store-brand-icon" :src="googleIcon" alt="" />Get It On Google Play</a>
         </div>
         <small>Available for iPhone and Android devices.</small>
       </div>
-      <div class="download-official-hero"><img :src="heroArt" width="1600" height="900" fetchpriority="high" alt="Create a song from an everyday idea and discover music in the Vanso app." /></div>
+      <div class="download-phone-pair" aria-label="Vanso creation and listening screens">
+        <div class="download-phone-back"><svg viewBox="250 115 470 730" role="img" aria-label="Create a song in Vanso"><defs><clipPath id="hero-create-crop"><rect x="250" y="115" width="470" height="730" /></clipPath></defs><image :href="heroArt" width="1600" height="900" clip-path="url(#hero-create-crop)" /></svg></div>
+        <div class="download-phone-front"><svg viewBox="940 115 380 730" role="img" aria-label="Listen to Taking the Long Way Home on Vanso"><defs><clipPath id="hero-listen-crop"><rect x="940" y="115" width="380" height="730" /></clipPath></defs><image :href="heroArt" width="1600" height="900" clip-path="url(#hero-listen-crop)" /></svg></div>
+      </div>
     </section>
 
     <section class="section container download-store-section">
@@ -89,15 +92,15 @@ const reviewsBottom = [
       </div>
       <div class="three-grid download-steps has-product-screens">
         <article>
-          <div class="flow-screen-stack official-flow-panel"><svg viewBox="0.0 0 533.333333 900" role="img" aria-label="Describe a birthday song for Mom"><image :href="flowArt" width="1600" height="900" /></svg></div>
+          <div class="flow-screen-stack official-flow-panel"><svg viewBox="20 55 490 750" role="img" aria-label="Describe a birthday song for Mom"><defs><clipPath id="flow-crop-0"><rect x="20" y="55" width="490" height="750" /></clipPath></defs><image :href="flowArt" width="1600" height="900" clip-path="url(#flow-crop-0)" /></svg></div>
           <b>01</b><h3>Start With An Idea</h3><p>Describe the music, feeling or story you want to create.</p>
         </article>
         <article>
-          <div class="flow-generating official-flow-panel"><svg viewBox="533.333333 0 533.333333 900" role="img" aria-label="Vanso generates your song"><image :href="flowArt" width="1600" height="900" /></svg></div>
+          <div class="flow-generating official-flow-panel"><svg viewBox="615 250 410 440" role="img" aria-label="Vanso generates your song"><defs><clipPath id="flow-crop-1"><rect x="615" y="250" width="410" height="440" /></clipPath></defs><image :href="flowArt" width="1600" height="900" clip-path="url(#flow-crop-1)" /></svg></div>
           <b>02</b><h3>Generate Your Song</h3><p>Let Vanso turn your idea into an original AI-generated track.</p>
         </article>
         <article>
-          <div class="flow-single-screen official-flow-panel"><svg viewBox="1066.666666 0 533.333333 900" role="img" aria-label="Preview and personalize your birthday song"><image :href="flowArt" width="1600" height="900" /></svg></div>
+          <div class="flow-single-screen official-flow-panel"><svg viewBox="1130 55 420 750" role="img" aria-label="Preview and personalize your birthday song"><defs><clipPath id="flow-crop-2"><rect x="1130" y="55" width="420" height="750" /></clipPath></defs><image :href="flowArt" width="1600" height="900" clip-path="url(#flow-crop-2)" /></svg></div>
           <b>03</b><h3>Make It Personal</h3><p>Make the song feel more personal with its cover art and description, and choose whether to share it on Vanso.</p>
         </article>
       </div>
@@ -143,7 +146,7 @@ const reviewsBottom = [
       <span class="eyebrow">CREATE • LISTEN • CONNECT</span>
       <h2>A Little Music For Your Everyday</h2>
       <p>Get the Vanso app to turn moments into songs and discover music from others.</p>
-      <div><a class="button" :href="googleUrl"><img class="store-brand-icon" :src="googleIcon" alt="" />Get It On Google Play</a><a class="button ghost" :href="appleUrl"><img class="store-brand-icon" :src="appleIcon" alt="" />Download On The App Store</a></div>
+      <div class="download-final-actions"><a class="button ghost" :href="appleUrl"><img class="store-brand-icon" :src="appleIcon" alt="" />Download On The App Store</a><a class="button ghost" :href="googleUrl"><img class="store-brand-icon" :src="googleIcon" alt="" />Get It On Google Play</a></div>
     </section>
     <SiteFooter />
   </main>

@@ -14,6 +14,7 @@ import './styles.css'
 import './help.css'
 import './v02.css'
 import './layout-polish.css'
+import './visual-refinements.css'
 
 const routes = [
   { path: '/blog', component: BlogPage, meta: { title: 'Vanso Blog | Everyday Stories, Music & Ideas', description: 'Explore everyday stories, AI music ideas, and ways to create, listen, and connect on Vanso.' } },
