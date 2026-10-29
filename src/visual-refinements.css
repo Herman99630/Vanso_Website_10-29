@@ -42,3 +42,32 @@
 /* Smaller feature artwork keeps the cards focused on their copy. */
 .home-page .feature-card .official-feature-icon { width:52px; height:52px; margin:0 auto 20px; }
 .home-page .feature-card .official-feature-icon img { width:52px; height:52px; }
+
+/* Shared section rhythm across the marketing pages. */
+.page { --section-space:72px; --content-gap:40px; }
+.page > section.section.section { padding-top:var(--section-space); padding-bottom:var(--section-space); margin-block:0; }
+.page > section.section .section-heading { margin-bottom:var(--content-gap); }
+.home-page > section.workflow-section .section-heading,
+.about-page > section.access-band .section-heading { margin-bottom:0; }
+.pricing-page .pricing-hero { padding-bottom:36px; }
+.pricing-page > .pricing-content.section.section { padding-top:36px; }
+.pricing-page .plan-cta { pointer-events:auto; }
+.pricing-page .plan-cta:focus-visible { outline:2px solid var(--cyan); outline-offset:4px; }
+.blog-page .blog-latest { padding-top:calc(var(--section-space) * 2); }
+.blog-page .blog-end { margin-top:calc(var(--section-space) * 2); margin-bottom:0; padding-block:var(--section-space); }
+.blog-page .blog-article,.blog-recommendations { padding-bottom:var(--section-space); }
+.article-page .help-article { padding-top:64px; padding-bottom:var(--section-space); }
+.article-page .help-article h2 { margin-top:40px; }
+/* Preserve the entire spotlight image, anchored at the foot of this module. */
+.home-page > .mission.section { min-height:640px; align-items:start; isolation:isolate; }
+.home-page .mission > img { inset:0; width:100%; height:100%; object-fit:contain; object-position:center bottom; opacity:.38; filter:none; }
+.home-page .mission::after { background:linear-gradient(180deg,#07070b80,transparent 65%); pointer-events:none; }
+.home-page .mission > div { margin-top:0; }
+.home-page .mission p { color:#d1ced8; }
+@media(max-width:800px) {
+ .page { --section-space:48px; --content-gap:32px; }
+ .pricing-page .pricing-hero { padding-bottom:24px; }
+ .pricing-page > .pricing-content.section.section { padding-top:24px; }
+ .article-page .help-article { padding-top:40px; }
+ .home-page > .mission.section { min-height:580px; }
+}
