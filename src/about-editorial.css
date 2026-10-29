@@ -1,0 +1,43 @@
+/* Two distinct editorial sections, with shared spacing and intact artwork. */
+.about-page .audience-editorial {
+ display:grid; grid-template-columns:minmax(0,.8fr) minmax(0,1.55fr);
+ align-items:center; gap:48px; padding:40px;
+ border:1px solid #ffffff14; border-radius:28px;
+ background:radial-gradient(ellipse at 90% 50%,#6b3c7917,transparent 65%),#ffffff02;
+}
+.about-page .audience-section .section-heading { text-align:left; margin:0; max-width:none; }
+.about-page .audience-section h2 { font-size:clamp(32px,3.5vw,44px); margin-bottom:24px; text-wrap:balance; }
+.about-page .audience-section .eyebrow { font-size:10px; letter-spacing:.15em; }
+.about-page .audience-section .audience-lead { font-size:20px!important; line-height:1.5; font-weight:600; margin:0 0 16px; }
+.about-page .audience-section .section-heading p:last-child { font-size:15px; line-height:1.8; margin:0; }
+.about-page .audience-artwork { min-width:0; margin:0; }
+.about-page .creation-scenes {
+ border-block:1px solid #ffffff12;
+ background:radial-gradient(ellipse at 50% 40%,#4733661a,transparent 70%),linear-gradient(180deg,#12121bd9,#0a1014a6);
+}
+.about-page .creation-scenes .section-heading {
+ display:grid; grid-template-columns:1.2fr 1fr; gap:64px; align-items:end;
+ text-align:left; max-width:none; margin:0 0 40px;
+}
+.about-page .creation-scenes h2 { font-size:clamp(32px,3.5vw,44px); max-width:600px; margin:0; text-wrap:balance; }
+.about-page .creation-scenes .section-heading p { max-width:330px; margin:0 0 3px; justify-self:end; font-size:16px; line-height:1.8; }
+.about-page .creation-flow-artwork { max-width:1040px; margin:0 auto 24px; }
+.about-page .creation-flow-artwork img { display:block; width:100%; height:auto; }
+.about-page .creation-scenes .scene-grid { gap:32px; }
+.about-page .creation-scenes .scene-grid article { border-top:1px solid #93cfc633; padding:24px 12px 0; }
+.about-page .creation-scenes .scene-grid h3 { font-size:21px; line-height:1.35; margin:0 0 12px; }
+.about-page .creation-scenes .scene-grid p { font-size:15px; line-height:1.8; max-width:310px; }
+@media(max-width:1000px) {
+ .about-page .audience-editorial { padding:28px; gap:28px; grid-template-columns:minmax(0,.9fr) minmax(0,1.3fr); }
+}
+@media(max-width:800px) {
+ .about-page .audience-editorial { grid-template-columns:1fr; padding:28px 20px; gap:28px; border-radius:22px; }
+ .about-page .audience-section .section-heading { max-width:540px; }
+ .about-page .audience-section h2 { margin-bottom:18px; }
+ .about-page .creation-scenes .section-heading { grid-template-columns:1fr; gap:18px; margin-bottom:28px; }
+ .about-page .creation-scenes .section-heading p { justify-self:start; max-width:440px; }
+ .about-page .creation-flow-artwork { margin-bottom:24px; }
+ .about-page .creation-scenes .scene-grid { grid-template-columns:1fr; gap:24px; }
+ .about-page .creation-scenes .scene-grid article { padding:20px 0 0; }
+ .about-page .creation-scenes .scene-grid p { max-width:none; }
+}
