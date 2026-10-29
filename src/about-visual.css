@@ -31,3 +31,6 @@
 
 .creation-flow-artwork{width:100%;margin:0 auto 32px}
 .creation-flow-artwork img{display:block;width:100%;height:auto;object-fit:contain}
+
+.about-share-artwork { width:100%; min-width:0; max-width:480px; justify-self:center; }
+.about-share-artwork img { display:block; width:100%; height:auto; object-fit:contain; }
