@@ -1,7 +1,13 @@
 <script setup>
 import SiteHeader from '../components/SiteHeader.vue'
 import SiteFooter from '../components/SiteFooter.vue'
-import ProductIcon from '../components/ProductIcon.vue'
+import '../design-icons.css'
+import flow1 from '../../assets/ic_0201_3x.webp'
+import flow2 from '../../assets/ic_0202_3x.webp'
+import flow3 from '../../assets/ic_0203_3x.webp'
+import feature1 from '../../assets/icon_0301_3x.webp'
+import feature2 from '../../assets/icon_0302_3x.webp'
+import feature3 from '../../assets/icon_0303_3x.webp'
 import '../home-art.css'
 
 const songs = [
@@ -9,9 +15,9 @@ const songs = [
   ['Summer Vibes', '5.6k', '1.2k'], ['Cyberpunk Dreams', '3.2k', '800'],
 ]
 const features = [
-  ['phone', 'Make The Everyday Musical', 'A small win, an inside joke, a strong opinion, or your reaction to the day. Turn it into a song with AI.'],
-  ['headphones', 'Find Your Next Favorite', 'Trust your ears. Discover a hidden gem, save it to your favorites, and be the one who heard it first.'],
-  ['comment', 'Share A Little Connection', 'Like a song, save it for later, or leave a comment. Small responses can make music feel more personal.'],
+  [feature1, 'Make The Everyday Musical', 'A small win, an inside joke, a strong opinion, or your reaction to the day. Turn it into a song with AI.'],
+  [feature2, 'Find Your Next Favorite', 'Trust your ears. Discover a hidden gem, save it to your favorites, and be the one who heard it first.'],
+  [feature3, 'Share A Little Connection', 'Like a song, save it for later, or leave a comment. Small responses can make music feel more personal.'],
 ]
 </script>
 
@@ -31,12 +37,12 @@ const features = [
 
     <section class="section container workflow-section">
       <div class="section-heading"><h2>From Everyday Ideas <span class="gradient-text">To Songs</span></h2><p>A thought, a feeling, a little story — start with something from your day and make it a song.</p></div>
-      <div class="steps"><article><b>01</b><i><ProductIcon name="music" /></i><h3>Generate With AI</h3><p>Start with an idea, lyric, mood or story in the Vanso app.</p></article><article><b>02</b><i><ProductIcon name="publish" /></i><h3>Publish On Vanso</h3><p>Share your song on Vanso and let others hear your take on life.</p></article><article><b>03</b><i><ProductIcon name="headphones" /></i><h3>Connect Through Music</h3><p>Discover songs, save your favorites, and connect with the people behind the music through likes and comments.</p></article></div>
+      <div class="steps"><article><i class="official-step-icon"><img :src="flow1" alt="" width="88" height="88" /></i><h3>Generate With AI</h3><p>Start with an idea, lyric, mood or story in the Vanso app.</p></article><article><i class="official-step-icon"><img :src="flow2" alt="" width="88" height="88" /></i><h3>Publish On Vanso</h3><p>Share your song on Vanso and let others hear your take on life.</p></article><article><i class="official-step-icon"><img :src="flow3" alt="" width="88" height="88" /></i><h3>Connect Through Music</h3><p>Discover songs, save your favorites, and connect with the people behind the music through likes and comments.</p></article></div>
     </section>
 
     <section class="section container">
       <div class="section-heading"><h2>Music For <span class="gradient-text">Your Everyday</span></h2><p>Make a song from your day, find something you love, and connect through music.</p></div>
-      <div class="feature-grid"><article v-for="(item, index) in features" :key="item[1]" :class="`feature-card tone-${index % 3}`"><b><ProductIcon :name="item[0]" /></b><h3>{{ item[1] }}</h3><p>{{ item[2] }}</p></article></div>
+      <div class="feature-grid"><article v-for="(item, index) in features" :key="item[1]" :class="`feature-card tone-${index % 3}`"><b class="official-feature-icon"><img :src="item[0]" alt="" width="88" height="88" /></b><h3>{{ item[1] }}</h3><p>{{ item[2] }}</p></article></div>
     </section>
 
     <section class="mission section">

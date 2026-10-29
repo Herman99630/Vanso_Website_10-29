@@ -1,0 +1,19 @@
+/* Official design assets: preserve intrinsic artwork and center above copy. */
+.home-page .workflow-section .steps .official-step-icon,
+.home-page .feature-card .official-feature-icon {
+  position:relative; inset:auto; display:grid; place-items:center;
+  width:88px; height:88px; margin:0 auto 24px;
+  background:none; border:0; border-radius:0;
+}
+.official-step-icon img,.official-feature-icon img { display:block; width:88px; height:88px; object-fit:contain; }
+.home-page .workflow-section .steps article { padding-left:0; }
+.home-page .workflow-section .steps::before { display:none; }
+.footer-brand-row { display:flex; align-items:center; justify-content:space-between; gap:24px; flex-wrap:wrap; }
+.footer-social-icons { display:flex; align-items:center; gap:12px; }
+.footer-social-icons a,.footer-social-icons .social-pending { display:grid; place-items:center; width:44px; height:44px; border-radius:10px; }
+.footer-social-icons img { display:block; width:28px; height:28px; object-fit:contain; }
+.footer-social-icons a { transition:background .2s,transform .2s; }
+.footer-social-icons a:hover { background:#ffffff12; transform:translateY(-2px); }
+.footer-social-icons a:focus-visible { outline:2px solid var(--cyan); outline-offset:3px; }
+@media(max-width:650px) { .footer-brand-row { flex-direction:column; justify-content:center; } }
+@media(prefers-reduced-motion:reduce) { .footer-social-icons a { transition:none; } .footer-social-icons a:hover { transform:none; } }
