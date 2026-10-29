@@ -101,3 +101,19 @@
 .blog-article-meta { display:flex; flex-wrap:wrap; align-items:baseline; gap:8px 12px; margin:22px 0 14px; color:#c1bdca; font-size:14px; line-height:1.7; }
 .blog-meta-preview,.blog-meta-divider { color:#9995a7; }
 @media(max-width:650px) { .blog-article-meta { font-size:12px; gap:6px 10px; } }
+
+/* Clear return action and three contextual recommendations per article. */
+.blog-article > .blog-back {
+  display:inline-flex; align-items:center; justify-content:center;
+  min-height:44px; padding:10px 18px; border:1px solid #ffffff38;
+  border-radius:12px; color:#f3f3f5; background:#ffffff0c;
+  font-size:14px; font-weight:800; line-height:1.4;
+  transition:background-color .2s,border-color .2s;
+}
+.blog-article > .blog-back:hover { color:#fff; background:#ffffff18; border-color:#ffffff70; }
+.blog-recommendations { padding-bottom:65px; }
+.blog-recommendations .blog-section-heading { padding-top:32px; margin-bottom:28px; }
+.blog-recommendations .blog-section-heading h2 { color:#e4e2e9; font-size:24px; letter-spacing:-.025em; text-transform:none; }
+.blog-recommendation-meta { display:flex; flex-wrap:wrap; align-items:baseline; gap:5px 8px; color:#b6b2c1; font-size:12px; line-height:1.7; margin:0 0 14px; }
+@media(max-width:650px) { .blog-recommendations { padding-bottom:40px; }.blog-recommendations .blog-grid { gap:30px; } }
+@media(prefers-reduced-motion:reduce) { .blog-article > .blog-back { transition:none; } }
